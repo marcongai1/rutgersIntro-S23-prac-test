@@ -1,7 +1,34 @@
+import java.util.Scanner;
+
 public class rutgersIntro {
     
     public rutgersIntro(){
+        //Section 3: Question 4
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of days Meg makes donuts each week: ");
+        int day = scanner.nextInt();
+
+        System.out.print("Enter the number of donuts Meg makes each day: ");
+        int donuts = scanner.nextInt();
+
+        int total = day * donuts;
+        System.out.println("Meg makes " + total + " donuts each week.");
+
+        
     }  
+     //Section 3: Question 5
+    public void isPrime() {
+        int n = Integer.parseInt(args[0]);
+        boolean isPrime = true;
+        for (int i = 2; i < n; i++) {
+            if ((n % i) == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        System.out.println(isPrime);
+    }
     public static void main(String[] args){
         rutgersIntro app = new rutgersIntro();
     }
@@ -70,5 +97,25 @@ public class rutgersIntro {
  * F) int, 6
  * G) boolean, false
  * H) boolean, true
+ * 
+ * Section 3:
+ * Question 1:
+ * b) 15
+ * 
+ * Question 2:
+ * c)for(int i=0; i<10; i++){
+ * if (i%2 == 0){
+ * System.out.println(i);}
+ * 
+ * Question 3:
+ * a) 25
+ * 
+ * Question 4:
+ * Refer to code above
+ * 
+ * Question 5:
+ * Refer to code above
  */
+
+
 
